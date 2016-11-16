@@ -8,8 +8,8 @@ from boto.s3.key import Key
 from boto.ec2.connection import EC2Connection
 action = input("Please type in : upload-emails ... ")
 bucket_name = input("What is the bucket_name you wish to create: ")
-s3 = boto.connect_s3(aws_access_key_id='AKIAIUUEBUOEBQZPZCIA', aws_secret_access_key= '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')
-ec2 = EC2Connection(aws_access_key_id='AKIAIUUEBUOEBQZPZCIA', aws_secret_access_key= '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')
+s3 = boto.connect_s3(aws_access_key_id='', aws_secret_access_key= '')
+ec2 = EC2Connection(aws_access_key_id='', aws_secret_access_key= '')
 #Create a bucket incase one does not already exist
 
 def create_bucket():
@@ -45,7 +45,8 @@ def create_website():
     </td>\
     <td bgcolor="#aaa" width="20%">\      
    </tr>\
-</table>\
+</table>\
+
 </p>\
 </body>\
 </html>'\
